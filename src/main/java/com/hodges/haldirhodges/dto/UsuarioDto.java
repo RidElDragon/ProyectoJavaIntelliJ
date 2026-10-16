@@ -57,4 +57,13 @@ private String contrasenia = "";
     public void setContrasenia(String contrasenia) {
         this.contrasenia = contrasenia;
     }
+    @Override
+    public String toString() {
+        return "UsuarioDto{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", correo='" + correo + '\'' +
+                ", anioNacimiento=" + anioNacimiento +
+                '}';
+    }
 }
