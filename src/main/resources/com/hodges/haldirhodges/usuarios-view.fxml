@@ -4,11 +4,19 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="243.0" prefWidth="236.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.hodges.haldirhodges.controller.UsuariosController">
+<VBox alignment="CENTER" prefHeight="320.0" prefWidth="250.0" spacing="15.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hodges.haldirhodges.controller.UsuariosController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
 
-    <Label fx:id="welcomeText" />
-    <Button onAction="#onHelloButtonClick" prefHeight="25.0" prefWidth="66.0" text="Hello!" />
+    <Label text="Inicio de sesión" />
+
+    <TextField fx:id="txtCorreo" promptText="usuario@gmail.com" />
+    <PasswordField fx:id="txtContrasenia" promptText="*****" />
+
+    <Button onAction="#onLoginClick" prefHeight="25.0" prefWidth="100.0" text="Iniciar sesión" />
+
+    <Label fx:id="welcomeText" alignment="CENTER" prefHeight="35.0" prefWidth="210.0" />
+
+    <Button onAction="#onRegistrarseClick" text="Registrarse" />
 </VBox>
